@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## Welcome to Toolkit13 (13th Age Compatible)
 
-You can use the [editor on GitHub](https://github.com/Mageflame/Toolkit13/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Enabling Icon Card Support
+As of 1.7.0, Iconic Relationship points can automatically give out Cards that represent them using this module: ![https://github.com/Brownie79/fvtt-card-support](https://github.com/Brownie79/fvtt-card-support)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![](https://cdn.discordapp.com/attachments/718595753852797012/746472772162814082/mageflame_icon_cards.gif)
 
-### Markdown
+Card support works with any SDF (Standard Deck Format) deck. You can use your own custom Icons and Cards so long as the Icon Relationship name in your Actor field matches the name in the metadata on the deck
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Example from the included Mageflame Tarot Card SDF deck (![https://github.com/Mageflame/Toolkit13/blob/alpha/Mageflame%20Tarot%20Cards.zip](https://github.com/Mageflame/Toolkit13/blob/alpha/Mageflame%20Tarot%20Cards.zip): 
+```yaml
+name: The Gatekeeper 5
+img: The Gatekeeper 5.jpg
+back: The Gatekeeper 6.jpg
+data:
+    value: 5
+    icon: The Gatekeeper
+---
+name: The Gatekeeper 6
+img: The Gatekeeper 6.jpg
+back: The Gatekeeper 5.jpg
+data:
+    value: 6
+    icon: The Gatekeeper
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For instructions on how to load the SDF deck, please see the Card Support documentation.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mageflame/Toolkit13/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Once loaded, if a match is found on Iconic Relationship rolls, the correct cards will be dealt to players.
