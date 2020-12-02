@@ -34,8 +34,6 @@ For Triggers that rely on Hitting / Missing, the System will only evaluate the T
 
 Trigger evaluation is powered by Natural Language Processing (regexes, not full NLP AI) - all you need to do is type the power using the words we support.
 
-// TODO: Full list of supported Triggers
-
 ##### Target Amount
 
 1) Default - "far away target", "far away targets" - Checks attack against all selected targets
