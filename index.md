@@ -36,21 +36,21 @@ Trigger evaluation is powered by Natural Language Processing (regexes, not full 
 
 ##### Target Amount
 
-1) Default - "far away target", "far away targets" - Checks attack against all selected targets
-2) Amount - "1 nearby target", "3 nearby targets" - If more than specified number of targets is selected, only up to X (in the order of selection) is checked
-3) Variable Amount - "`[[d2 + 2]]` nearby targets", "`[[d3]]` nearby targets in a group" - Evaluates the roll, then executes as if #2
-4) Random Selection - "3 random nearby targets", "`[[d3]]` random far away targets" - As #3, except the targets are picked randomly instead of in-order
+* Default - "far away target", "far away targets" - Checks attack against all selected targets
+* Amount - "1 nearby target", "3 nearby targets" - If more than specified number of targets is selected, only up to X (in the order of selection) is checked
+* Variable Amount - "`[[d2 + 2]]` nearby targets", "`[[d3]]` nearby targets in a group" - Evaluates the roll, then executes as if #2
+* Random Selection - "3 random nearby targets", "`[[d3]]` random far away targets" - As #3, except the targets are picked randomly instead of in-order
 
 ##### Natural Roll Triggers
 
-1) Always - "Always:" - Always triggers
-2) Hit - "Natural even hit:", "Hit:", "Natural Hit:" - Triggers when the natural attack roll matches or beats the target's defense
-3) Miss - "Natural even miss:", "Miss:", "Natural Miss:" - Triggers when the natural attack roll is less than the target's defense
-4) Even - "Natural even:", "Natural Even:" - Triggers with the natural attack roll is even
-5) Odd - "Natural odd:", "Natural Odd:" - Triggers with the natural attack roll is odd
-6) X+ - "Natural 6+:", "Natural 11+:" - Triggers when the natural attack roll matches or beats the target number such as 6
-7) X - "Natural 1:", "Natural 20:", "Natural 10:" - Triggers when the natural attack roll exactly matches the target number such as 10
-8) Crit - "Crit:" - Shorthand for "Natural 20"
+* Always - "Always:" - Always triggers
+* Hit - "Natural even hit:", "Hit:", "Natural Hit:" - Triggers when the natural attack roll matches or beats the target's defense
+* Miss - "Natural even miss:", "Miss:", "Natural Miss:" - Triggers when the natural attack roll is less than the target's defense
+* Even - "Natural even:", "Natural Even:" - Triggers with the natural attack roll is even
+* Odd - "Natural odd:", "Natural Odd:" - Triggers with the natural attack roll is odd
+* X+ - "Natural 6+:", "Natural 11+:" - Triggers when the natural attack roll matches or beats the target number such as 6
+* X - "Natural 1:", "Natural 20:", "Natural 10:" - Triggers when the natural attack roll exactly matches the target number such as 10
+* Crit - "Crit:" - Shorthand for "Natural 20"
 
 #### Damage / Healing menu
 You can right click a non-Attack roll to open a Context menu. This menu allows you to apply the roll as straight damage, half damage, double damage, triple damage, healing, or temporary health.
